@@ -57,8 +57,20 @@ App.config(['$routeProvider', function ($routeProvider) {
         controller: 'HomeController'
     })
     .when('/items', {
-        templateUrl: './views/skill.html',
+        templateUrl: './views/items.html',
         controller: 'ItemsController'
+    })
+    .when('/tag', {
+        templateUrl: './views/tag.html',
+        controller: 'TagController'
+    })
+    .when('/hobby', {
+        templateUrl: './views/hobby.html',
+        controller: 'HobbyController'
+    })
+    .when('/about', {
+        templateUrl: './views/about.html',
+        controller: 'AboutController'
     })
     .otherwise({
         redirectTo : '/'

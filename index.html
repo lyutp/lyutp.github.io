@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
-    <link rel="stylesheet/less" type="text/css" href="css/index.less">
-    <script type="text/javascript" src="./libs/less.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="./libs/jquery.min.js"></script>
+    <!-- build:js ./angular.min.js -->
     <script type="text/javascript" src="./libs/angular.min.js"></script>
     <script type="text/javascript" src="./libs/angular-route.min.js"></script>
+    <!-- endbulid -->
+    <script type="text/javascript" src="./script/controllers.js"></script>
+    <script type="text/javascript" src="./script/index.js"></script>
 </head>
 <body>
     <div class="warpper">
@@ -26,26 +29,6 @@
                         <span>{{tab.content}}</span>
                     </a>
                 </li>
-                <!-- <li>
-                    <a href="#/skill" class="icon-quill">
-                        <span>Skill</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#/tag" class="icon-bookmarks">
-                        <span>Tag</span>
-                    </a>
-                </li>
-                <li>
-                <a href="#/hobby" class="icon-music">
-                    <span>Hobby</span>
-                </a>
-                </li>
-                <li>
-                    <a href="#/about" class="icon-user-tie">
-                        <span>About</span>
-                    </a>
-                </li> -->
             </ul>
         </div>
         <!-- 主体 -->
@@ -62,6 +45,4 @@
         </div>
     </div>
 </body>
-    <script type="text/javascript" src="./script/controllers.js"></script>
-    <script type="text/javascript" src="./script/index.js"></script>
 </html>

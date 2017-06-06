@@ -1,0 +1,235 @@
+@import 'fonts.css';
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+body {
+  background: url('../images/bg2.jpg') no-repeat top left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.top {
+  width: 1200px;
+  margin: 30px auto 0;
+  overflow: hidden;
+}
+.top .logo {
+  float: left;
+  width: 250px;
+  border-radius: 20px;
+  text-align: center;
+  font-family: \534E\6587\96B6\4E66;
+  font-size: 80px;
+  color: #949400;
+  background-color: rgba(255, 255, 255, 0.5);
+  user-select: none;
+  cursor: pointer;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+}
+.top .music-play {
+  float: right;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  font-size: 50px;
+  text-align: center;
+  line-height: 90px;
+  color: #fff;
+}
+.top .music {
+  background: url('../images/music.png') no-repeat;
+  background-size: cover;
+  animation: rot 3s infinite linear;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.nav {
+  width: 800px;
+  margin: 20px auto;
+}
+.nav ul {
+  margin: 0 auto;
+}
+.nav ul li {
+  float: left;
+  margin: 0 25px;
+}
+.nav ul li a {
+  display: block;
+  width: 100px;
+  font-size: 40px;
+  text-align: center;
+  color: rgba(90, 89, 73, 0.9);
+  text-shadow: 1px 1px 1px #ccc;
+  transition: all .3s;
+}
+.nav ul li a:hover {
+  text-decoration: underline;
+  color: red;
+  transform: rotate(-360deg);
+}
+.nav ul li span {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.body {
+  width: 800px;
+  margin: 0 auto;
+}
+.body .book {
+  position: relative;
+  margin: 0 auto;
+  width: 78px;
+  height: 600px;
+  background: url('../images/12_01.png') left 0 no-repeat, url('../images/12_03.png') right 0 no-repeat, url('../images/12_02.png') center 0 no-repeat;
+  transition: all 1s;
+}
+.body .book:hover {
+  width: 800px;
+}
+.body .book .content {
+  position: absolute;
+  width: 625px;
+  height: 307px;
+  overflow: hidden;
+  top: 108px;
+  left: 87px;
+  display: none;
+}
+.body .home {
+  border-radius: 6px;
+  background: url('../images/index.jpg') no-repeat left -30px;
+  background-size: cover;
+}
+.body .homeWord {
+  font-size: 20px;
+  color: #dfdfdf;
+  line-height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.body .items li {
+  float: left;
+  width: 33.33%;
+}
+.body .items li a {
+  display: block;
+  width: 100%;
+  heighgt: 75px;
+  line-height: 75px;
+  text-align: center;
+  color: rgba(94, 0, 0, 0.9);
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.body .items li a:hover {
+  box-shadow: 1px 1px 2px 1px #ccc;
+  background-color: #fdfdfd;
+}
+.body .items li:nth-child(3n) a {
+  border-right: none;
+}
+.body .tag li {
+  float: left;
+  width: 80px;
+  height: 240px;
+  margin: 20px 0 0 20px;
+}
+.body .tag li div {
+  background-color: #fec896;
+}
+.body .tag li .tag-head {
+  width: 57px;
+  height: 57px;
+  transform: rotate(45deg) translateX(17px);
+  position: relative;
+  z-index: 1;
+}
+.body .tag li .tag-head::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.body .tag li .tag-body {
+  width: 81px;
+  height: 183px;
+  border-radius: 0 0 10px 10px;
+  transform: translateY(-17px);
+  padding-top: 17px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 16px;
+  box-shadow: 2px 2px 5px  #ccc;
+}
+.body .hobby {
+  padding: 20px 0 0 20px;
+  font: 20px/28px 'STXingkai';
+}
+.body .about li {
+  margin: 10px 0 0 20px;
+  font-size: 18px;
+  color: #333;
+}
+.body .about li::first-letter {
+  font-size: 25px;
+  color: red;
+}
+.footer {
+  width: 800px;
+  margin: 0 auto;
+}
+.footer .concat {
+  text-align: center;
+  font-size: 25px;
+  color: orange;
+}
+.footer .concat p {
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #fff;
+}
+.footer .backTop {
+  position: fixed;
+  right: 50px;
+  bottom: 30px;
+  font-size: 50px;
+  color: pink;
+  cursor: pointer;
+}
