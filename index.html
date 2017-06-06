@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet/less" type="text/css" href="css/index.less">
+    <script type="text/javascript" src="./libs/less.js"></script>
+    <script type="text/javascript" src="./libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./libs/angular.min.js"></script>
+    <script type="text/javascript" src="./libs/angular-route.min.js"></script>
+</head>
+<body>
+    <div class="warpper">
+        <!-- 顶部logo和播放按钮 -->
+        <div class="top clearfix">
+            <div class="logo">ltp'page</div>
+            <div class="music music-play">
+                <audio src="./audio/bgm.mp3" autoplay loop></audio>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav clearfix" ng-controller="NavController">
+            <ul>
+                <li ng-repeat="tab in tabs" ng-click="show()">
+                    <a ng-href="{{tab.url}}" class="{{tab.icon}}">
+                        <span>{{tab.content}}</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="#/skill" class="icon-quill">
+                        <span>Skill</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/tag" class="icon-bookmarks">
+                        <span>Tag</span>
+                    </a>
+                </li>
+                <li>
+                <a href="#/hobby" class="icon-music">
+                    <span>Hobby</span>
+                </a>
+                </li>
+                <li>
+                    <a href="#/about" class="icon-user-tie">
+                        <span>About</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <!-- 主体 -->
+        <div class="body">
+            <div class="book">
+                <div ng-view></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="concat">
+                <p>Thank you!</p>
+            </div>
+            <div class="backTop icon-shift"></div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="./script/controllers.js"></script>
+    <script type="text/javascript" src="./script/index.js"></script>
+</html>

@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {          /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;               /*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;          /*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";   /*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {              
+    font-style: normal;
+    text-decoration: none;
+}
+
+.col-red {
+    color: #C81623 !important;
+}
+
+/*公共类*/
+.w {
+    /*版心 提取 */
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.al {
+    text-align: left
+}
+
+.ac {
+    text-align: center
+}
+
+.ar {
+    text-align: right
+}
+
+.hide {
+    display: none
+}
+
+    /*top-nav部分start*/
+    .top-nav {
+        height: 30px;
+        line-height: 30px;
+        background: #f1f1f1;
+    }
+    .top-nav-left {
+        width: 60px;
+        padding: 0 25px 0 10px;
+        position: relative;
+    }
+    .top-nav-left:hover {
+        background-color: #fff;
+    }
+    .top-nav-left i,
+    .fore i {
+        position: absolute;
+        width: 15px;
+        height: 7px;
+        top: 12px;
+        right: 6px;
+        overflow: hidden;
+    }
+    .top-nav-left s,
+    .fore s {
+        position: absolute;
+        font: 400 12px/150% "consolas";
+        top: -8px;
+    }
+    .top-nav-right li {
+        float: left;
+        padding: 0 10px;
+    }
+    .top-nav-right .line {
+        height: 12px;
+        width: 1px;
+        margin-top: 9px;
+        padding: 0;
+        background: #dddddd;
+    }
+    .top-nav-right .fore {
+        padding-right: 24px;
+        position: relative;
+    }
+    .top-nav-right .tel {
+        padding-left: 27px;
+    }
+    .top-nav-right span {
+        position: absolute;
+        left: 6px;
+        top: 5px;
+        width: 15px;
+        height: 20px;
+        background: url("../images/tel.png") no-repeat top left;
+    }
+    /*top-nav部分end*/
+
+    /*top-banner部分start*/
+    .top-banner {
+        /*height: 120px;*/
+        background-color: #37c2fb;
+    }
+    .top-banner-content {
+        position: relative;
+    }
+    .close-banner {
+        position: absolute;
+        height: 19px;
+        width: 19px;
+        background: url("../images/close-banner.png") no-repeat top left;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    .close-banner:hover {
+        background-position: bottom;
+    }
+    /*top-banner部分end*/
+
+    /*search部分start*/
+    .search-logo {
+        margin-top: 25px;
+        width: 362px;
+    }
+    .search-logo a {
+        display: inline-block;
+        width: 270px;
+        height: 60px;
+        text-indent: -5000em;
+        background: url("../images/logo.png") no-repeat;
+    }
+    .search-input {
+        width: 538px;
+        height: 36px;
+        margin-top: 25px;
+    }
+    .search-input input {
+        float: left;
+        width: 450px;
+        height: 32px;
+        border: 2px solid #b61d1d;
+        font: 400 14px/32px "miscrosoft yahei";
+        border-right: 0;
+        padding-left: 4px;
+        color: #999999;
+    }
+    .search-input button {
+        width: 82px;
+        height: 36px;
+        font: 400 16px/36px "miscrosoft yahei";
+        background-color: #b61d1d;
+        color: #fff;
+        cursor: pointer;
+    }
+    .search-car {
+        width: 139px;
+        height: 34px;
+        border: 1px solid #dfdfdf;
+        line-height: 34px;
+        position: relative;
+        margin-top: 25px;
+        margin-right: 65px;
+    }
+    .search-car a {
+        padding-left: 42px;
+    }
+    .search-car .icon1 {
+        position: absolute;
+        right: 10px;
+        font: 400 13px/34px "simsun";
+    }
+    .search-car .icon2 {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        width: 18px;
+        height: 15px;
+        background: url("../images/tel.png") no-repeat 0 -58px;
+    }
+    .search-car .icon3 {
+        position: absolute;
+        right: 23px;
+        top: -5px;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        background-color: #c81623;
+        color: #fff;
+        border-radius: 7px 7px 7px 0;
+    }
+    .search-morelinks {
+        width: 530px;
+        height: 28px;
+        line-height: 28px;
+    }
+    .search-morelinks a {
+        margin-right: 11px;
+
+    }
+    /*search部分end*/
+
+    /*shortcut-nav部分start*/
+    .shortcut-nav {
+        height: 44px;
+        border-bottom: 2px solid #b1191a;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    .shortcut-nav-menu {
+        width: 200px;
+        height: 44px;
+    }
+    .shortcut-nav-menu-all {
+        width: 200px;
+        height: 44px;
+        padding-left: 10px;
+        font: 400 14px/44px "miscrosoft";
+        color: #fff;
+        background-color: #b1191a;
+    }
+    .shortcut-nav-menu-one {
+        width: 209px;
+        height: 465px;
+        background-color: #c81623;
+        border-left: 1px solid #b61d1d;
+        border-bottom: 1px solid #b61d1d;
+    }
+    .shortcut-nav-menu-one li {
+        width: 189px;
+        height: 31px;
+        padding: 0 10px;
+        color: #fff;
+    }
+    .shortcut-nav-menu-one li:hover {
+        background: #fff;
+    }
+    .shortcut-nav-menu-one li:hover a {
+        color: #c81623;
+    }
+    .shortcut-nav-menu-one a {
+        display: inline-block;
+        float: left;
+        font: 400 12px/31px "miscrosoft yahei";
+        color: #fff;
+    }
+    .shortcut-nav-menu-one i {
+        float: right;
+        font: 400 9px/31px "consolas";
+    }
+    .shortcut-nav-items li {
+        float: left;
+    }
+    .shortcut-nav-items a {
+        display: inline-block;
+        height: 44px;
+        padding: 0 20px;
+        font: 400 16px/44px "miscorsoft yahei";
+        color: #333333;
+    }
+    .shortcut-nav-items a:hover {
+        color: #C81623;
+    }
+    .shortcut-nav-img {
+        width: 200px;
+        height: 54px;
+        margin-right: 55px;
+        margin-top: -10px;
+    }
+    /*shortcut-nav部分end*/
+
+    /*main部分start*/
+    /*main部分end*/
+
+    /*nav-top部分start*/
+    /*nav-top部分end*/
+
+    /*nav-top部分start*/
+    /*nav-top部分end*/
+
+    /*nav-top部分start*/
+    /*nav-top部分end*/
+
+    /*footer部分start*/
+    .footer-top-slogen {
+        width: 100%;
+        height: 45px;
+        padding: 20px 0;
+        position: relative;
+        background-color: #f5f5f5;
+    }
+    .footer-top-slogen img {
+        position: absolute;
+        left: 50%;
+    }
+    .footer-top-slogen .footer-top-slogen1 {
+        margin-left: -600px;
+    }
+    .footer-top-slogen .footer-top-slogen2 {
+        margin-left: -300px;
+    }
+    .footer-top-slogen .footer-top-slogen4 {
+        margin-left: 300px;
+    }
+    .footer-top-shopping {
+        height: 202px;
+        border-bottom: 1px solid #e5e5e5;
+        margin-top: 15px;
+    }
+    .footer-top-shopping dl {
+        float: left;
+        width: 200px;
+    }
+    .footer-top-shopping dt,
+    .footer-top-coverage h3 {
+        height: 35px;
+        font: 400 15px/35px "miscrosoft yahei";
+    }
+    .footer-top-shopping dd {
+        height: 20px;
+        line-height: 20px;
+    }
+    .footer-top-shopping .footer-top-shopping-last {
+        width: 100px;
+    }
+    .footer-top-coverage {
+        width: 185px;
+        height: 169px;
+        float: right;
+        margin-right: 40px;
+        padding-left: 18px;
+        background: url("../images/china.png") no-repeat left bottom;
+    }
+    .footer-top-coverage p {
+        margin-top: 8px;
+        font: 400 12px/150% "simsun";
+    }
+    .footer-top-coverage a {
+        float: right;
+    }
+    .footer-bottom {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .footer-bottom-links {
+        margin-top: 10px;
+    }
+    .footer-bottom-links a {
+        margin: 0 5px;
+        line-height: 36px;
+    }
+    .footer-bottom-copyright {
+        color: #999999;
+    }
+    .footer-bottom-copyright a {
+        color: #999999;
+    }
+    .footer-bottom-copyright span {
+        margin: 0 7px;
+    }
+    .footer-bottom-img {
+        margin-top: 9px;
+    }
+    .footer-bottom-img a {
+        display: inline-block;
+        width: 103px;
+        height: 32px;
+        margin: 0 5px;
+        background: url("../images/ico_footer.png") no-repeat left -151px;
+    }
+    .footer-bottom-img .footer-icon2 {
+        background-position: right -151px;
+    }
+    .footer-bottom-img .footer-icon3 {
+        background-position: left -184px;
+    }
+    .footer-bottom-img .footer-icon4 {
+        background-position: right -184px;
+    }
+    .footer-bottom-img .footer-icon5 {
+        background-position: left -217px;
+    }
+    .footer-bottom-img .footer-icon6 {
+        background-position: right -217px;
+    }
+
+
+
+    /*footer部分end*/

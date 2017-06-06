@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?7ivdbj');
+  src:  url('../fonts/icomoon.eot?7ivdbj#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7ivdbj') format('truetype'),
+    url('../fonts/icomoon.woff?7ivdbj') format('woff'),
+    url('../fonts/icomoon.svg?7ivdbj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e902";
+}
+.icon-quill:before {
+  content: "\e907";
+}
+.icon-music:before {
+  content: "\e911";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-bookmarks:before {
+  content: "\e9d3";
+}
+.icon-happy:before {
+  content: "\e9df";
+}
+.icon-play:before {
+  content: "\ea1c";
+}
+.icon-pause:before {
+  content: "\ea1d";
+}
+.icon-shift:before {
+  content: "\ea4f";
+}
+.icon-embed:before {
+  content: "\ea80";
+}
+.icon-mail:before {
+  content: "\ea86";
+}
+.icon-sina-weibo:before {
+  content: "\ea9a";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}

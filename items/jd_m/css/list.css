@@ -1,0 +1,112 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+/* 大容器 */
+.list_container {
+  width: 100%;
+}
+/* 顶部通栏 */
+.list_header {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #ccc;
+  background: url('../images/header-bg.png') repeat-x;
+  background-size: 1px 44px;
+  position: relative;
+  padding: 8.5px 45px;
+}
+.list_header a {
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  padding: 10px;
+  background: url("../images/sprites.png") no-repeat;
+  background-size: 200px 200px;
+  background-origin: content-box;
+  background-clip: content-box;
+  top: 0;
+}
+.list_header a:first-of-type {
+  background-position: -22px 0;
+  left: 0;
+}
+.list_header a:last-of-type {
+  background-position: -60px 0;
+  right: 0px;
+}
+.list_header input[type="search"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding-left: 5px;
+}
+/* 内容区域 */
+.list_main {
+  width: 100%;
+}
+.list_main .main_nav {
+  width: 90px;
+  float: left;
+}
+.list_main .main_nav ul {
+  width: 100%;
+}
+.list_main .main_nav ul li {
+  height: 50px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.list_main .main_nav ul li a {
+  line-height: 50px;
+  color: #333;
+}
+.list_main .main_nav ul li.current {
+  border-right: none;
+}
+.list_main .main_nav ul li.current a {
+  color: #c91523;
+}
+.main_content {
+  overflow: hidden;
+  padding: 10px;
+}
+.main_content .banner {
+  display: block;
+  width: 100%;
+}
+.main_content .banner img {
+  width: 100%;
+}
+.main_content .hot_cat {
+  width: 100%;
+  margin: 10px 0;
+}
+.main_content .hot_cat h3 {
+  font-size: 12px;
+}
+.main_content .hot_cat ul {
+  padding-top: 10px;
+  width: 100%;
+}
+.main_content .hot_cat ul li {
+  float: left;
+  width: 33.3333%;
+}
+.main_content .hot_cat ul li a {
+  width: 100%;
+  display: block;
+}
+.main_content .hot_cat ul li a img {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+.main_content .hot_cat ul li p {
+  margin: 5px;
+  font-size: 13px;
+  text-align: center;
+}
