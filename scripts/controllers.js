@@ -23,7 +23,7 @@ angular.module('Controllers', [])
         {category:'响应式布局-wjs',path:'./items/wjs/index.html'},
         {category:'Flappy bird',path:'./items/flappy_bird/index.html'},
         {category:'仿豆瓣一刻',path:'./items/Yike/index.html'},
-        {category:'node',path:'./items/node/index.html'}
+        {category:'node',path:'javascript:;'}
     ]
 }])
 .controller('TagController', ['$scope', function ($scope) {

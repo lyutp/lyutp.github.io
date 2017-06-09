@@ -36,10 +36,15 @@ var App = angular.module('App',['ngRoute', 'Controllers']);
 
 App.run(['$rootScope', function ($rootScope) {
     $rootScope.show = function () {
-        if ($('.book').css('width') == '800px') {
-            $('.book').css('width', '78px');
-            $('.book .content').stop().fadeOut(200);
-        }else {
+        if ($('.book').width() >= 600) {
+            $('.book .content').stop().fadeOut(200, function() {
+                $('.book').css('width', '78px');
+                $('.book')[0].addEventListener('webkitTransitionEnd',function() {
+                    $('.book').css('width','800px');
+                    $('.book .content').delay(800).slideDown(1000);
+                });
+            });
+        } else if ($('.book').width() <= 300) {
             $('.book').css('width', '800px');
             $('.book')[0].addEventListener('webkitTransitionEnd',function() {
                 if ($('.book').css('width') == '800px') {
